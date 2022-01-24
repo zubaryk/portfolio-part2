@@ -1,0 +1,574 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Merriweather;
+    src: url("assets/fonts/Merriweather/Merriweather-Bold.ttf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: Inter;
+    src: url("assets/fonts/Inter/static/Inter-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: Inter;
+    src: url("assets/fonts/Inter/static/Inter-Bold.ttf");
+    font-weight: 700;
+}
+html {
+    scroll-behavior: smooth;
+    background-color: black;
+}
+body {
+    background-color: black;
+    width: 1440px;
+    margin: 0 auto;
+}
+.container {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.header {
+    width: 1440px;
+    height: 90px;
+}
+.main {
+    width: 1440px;
+
+}
+.footer {
+    width: 1440px;
+}
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+.nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    transition: .3s;
+    text-decoration: none;
+}
+.nav-item {
+    font-size: 20px;
+    font-family: Inter-Regular;
+    font-weight: 400;
+    padding-top: 20px;
+}
+.icon {
+fill: white;
+width: 50px;
+height: 50px;
+float: left;
+padding-top: 20px;
+}
+.icon:hover {
+    fill: #bdae82;
+}
+A {
+    color: white;
+} 
+.language {
+    font-size: 20px;
+    font-family: Inter-Bold;
+    font-weight: 700;
+    color:white;
+    padding-top: 20px;
+}
+.en {
+    color: #bdae82;
+}
+h1 {
+    font-size: 60px;
+    font-family: Merriweather-Bold;
+    font-weight: 700;
+    color: white;
+    padding-top: 160px;
+    padding-left: 88px;
+}
+.header-container {
+    background: url('./assets/img/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center 0;
+    height: 90px;
+    padding: 0 20px;
+    background-size: cover;
+}
+.hero-container {
+    background-image: url('./assets/img/header-bg.jpg');
+    background-position: center -90px;
+    background-repeat: no-repeat;
+    height: 820px;
+    padding: 0 20px;
+    display: flex;
+    background-size: cover;
+}
+.hero-text {
+    font-size: 20px;
+    font-family: Inter-Regular;
+    font-weight: 400;
+    color: white;
+    padding-left: 88px;
+    line-height: 40px;
+}
+.btn {
+    height: 55px;
+    width: 220px;
+    margin-left: 88px;
+    border: 0;
+    background-color: #bdae82;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 400;
+}
+.section-title {
+    font-size: 40px;
+    font-family: Merriweather-Bold;
+    font-weight: 700;
+    color: #bdae82;
+    text-align: center;
+    padding-top: 67px;
+}
+.wrapper {
+    overflow-x: hidden;
+    width: 700px;
+    margin: auto;
+    text-align: center;
+}
+.wrapper h2 {
+    display: inline-block;
+    vertical-align: middle;
+}
+.wrapper ::before,
+.wrapper ::after {
+content: '';
+display: inline-block;
+vertical-align: middle;
+width: 1000px;
+height: 1px;
+background-color: #bdae82;
+position: relative;
+}
+.wrapper ::before {
+    margin-left: -1000px;
+    left: -14px;
+}
+.wrapper ::after {
+    margin-right: -1000px;
+    right: -14px;
+}
+.skills-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 60px;
+}
+.skill-item {
+    width: 320px;
+    text-align: center;
+}
+.camera {
+    width: 62px;
+    height: 50px;
+}
+.player {
+    width: 60px;
+    height: 50px;
+}
+.image {
+    width: 66px;
+    height: 50px;
+}
+.mic {
+    width: 32px;
+    height: 50px;
+}
+h4 {
+    font-size: 20px;
+    font-family: Inter-Bold;
+    font-weight: 700;
+    color: white;
+}
+.skill-text {
+    font-size: 18px;
+    font-family: Inter-Regular;
+    font-weight: 400;
+    color: white;
+}
+.portfolio-btns {
+    display: flex;
+    justify-content: center;
+}
+.winter,
+.spring,
+.summer {
+    width: 220px;
+    height: 55px;
+    margin-left: 5px;
+    background-color: black;
+    border-color: #bdae82;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #bdae82;
+
+}
+.autumn {
+    width: 220px;
+    height: 55px;
+    margin-left: 5px;
+    background-color: #bdae82;
+    border-color: #bdae82;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 400;
+}
+.portfolio-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+.portfolio-img {
+    width: 450px;
+    height: 560px;
+    margin-top: 25px;
+}
+.video-player {
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Play_hover {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+}
+
+.img-player {
+    width: 1400px;
+    height: 705px;
+}
+.price-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+.price-item {
+    width: 450px;
+    height: 505px;
+    border: 3px solid #bdae82;
+    text-align: center;
+    padding-top: 45px;
+}
+h3 {
+    font-size: 28px;
+    font-family: Merriweather-Bold;
+    font-weight: 700;
+    color: white;
+}
+.money {
+    font-size: 24px;
+    font-family: Merriweather-Bold;
+    font-weight: 700;
+    color: #bdae82;
+    padding-top: 20px;
+}
+.discription {
+    display: block;
+    font-size: 18px;
+    font-family: Inter-Regular;
+    font-weight: 400;
+    color: white;
+}
+.services {
+    line-height: 2;
+}
+.btn-price {
+    height: 55px;
+    width: 220px;
+    background-color: #bdae82;
+    font-size: 20px;
+    font-family: Inter-Regular;
+    font-weight: 400;
+    cursor: pointer;
+}
+.contacts {
+    background: url('./assets/img/contacts-bg.jpg');
+    background-size: auto 700px;
+    background-position: center center;
+    height: 700px;
+}
+.contacts-title {
+    font-size: 40px;
+    font-family: Merriweather-Bold;
+    font-weight: 700;
+    color: #bdae82;
+    padding-left: 950px;
+    padding-top: 60px;
+}
+.input-e-mail,
+.input-phone {
+    width: 450px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: 25px;
+}
+::placeholder {
+    font-family: inherit;
+    font-size: 20px;
+    color: #bdae82;
+}
+.input {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin: 0 auto 15px;
+}
+.input-message {
+    width: 450px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: 25px;
+}
+.btn-message {
+    width: 220px;
+    height: 55px;
+    background-color: #bdae82;
+    margin-top: 25px;
+    font-size: 20px;
+    font-family: Inter-Regular;
+    font-weight: 400;
+    cursor: pointer;
+ }
+ .footer {
+     width: 1440px;
+     height: 150px;
+     color: white;
+     font-size: 20px;
+     font-family: Inter-Regular;
+     
+     
+}
+ .c {
+     width: 50px;
+     height: 19px;
+ }
+ .footer-data {
+    width: 182px;
+ }
+ .work {
+     list-style: none;
+     display: flex;
+     justify-content: space-end;
+     align-items: center;
+ }
+ .work-link {
+    text-decoration: none;
+    padding: 0 5px;
+ }
+ .finish {
+    display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ .inst,
+ .fb,
+ .tw,
+ .pinterest {
+     width: 32px;
+     height: 32px;
+ }
+
+@media screen and (max-width: 768px) {
+    .header-container,
+    .container,
+    body, 
+    .main,
+    .footer,
+    .header {
+        width: 768px;
+    }
+    .contacts-title {
+     font-size: 40px;
+        font-family: Merriweather-Bold;
+        font-weight: 700;
+        color: #bdae82;
+        text-align: center;
+        padding-top: 60px;
+        padding-left: 0px;
+    }
+    .hero-container {
+    height: 500px;
+    }
+    .hero-text{
+    font-size: 20px;
+        font-family: Inter-Regular;
+        font-weight: 400;
+        color: white;
+        line-height: 40px;
+    }
+    
+    h1
+    {
+    font-size: 32px;
+        font-family: Merriweather-Bold;
+        font-weight: 400;
+        color: white;
+        padding-top: 78px;
+        padding-left:60px;
+    
+    }
+    .btn {
+        height: 54px;
+        width: 219px;
+        border: 0;
+        background-color: #bdae82;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .skills-items {
+        height: 729px;
+    }
+    .portfolio-btns {
+        justify-content: center;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .img-player {
+    width: 768px;
+    height: 418px;
+    }
+    .price-items {
+      display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+        align-items: center;
+    }
+    .portfolio-items {
+        display: flex;
+        margin-top: 35px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacts {
+        background: url('./assets/img/contacts-bg.jpg');
+        height: 600px;
+        background-size: cover;
+    }
+    .contacts-title {
+        font-size: 40px;
+        font-family: Merriweather-Bold;
+        font-weight: 700;
+        color: #bdae82;
+        text-align: center;
+        padding-top: 60px;
+    }
+     .work {
+         list-style: none;
+         display: flex;
+         align-items: center;
+     }
+     .finish {
+        display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+    }
+
+    @media screen and (max-width: 480px) {
+        .header-container,
+    .container,
+    body, 
+    .main,
+    .footer,
+    .header {
+        width: 430px;
+    }
+    .img-player {
+        width: 430px;
+        height: 418px;
+        }
+     .wrapper {
+            width: 430px;
+        }   
+    .input {
+        margin: 0 auto 0;
+    }
+    .input-e-mail,
+     .input-message,
+     .input-phone {
+         width: 280px;
+     }
+     .price-item {
+         width: 400px;
+     }
+     .winter,
+     .spring,
+     .summer,
+     .autumn {
+        width: 180px;
+    }
+    .portfolio-img {
+        width: 400px;
+    }
+    @media screen and (max-width: 320px) {
+    .header-container,
+    .container,
+    body, 
+    .main,
+    .footer,
+    .header {
+        width: 280px;
+    }
+    .img-player {
+        width: 280px;
+        height: 418px;
+        }
+     .wrapper {
+            width: 280px;
+        } 
+     .portfolio-img {
+         width: 280px;
+     }  
+     .price-item {
+         width: 280px;
+     }
+     .input-e-mail,
+     .input-message,
+     .input-phone {
+         width: 280px;
+     }
+     .winter,
+     .spring,
+     .summer,
+     .autumn {
+        width: 150px;
+    }
+    .btn {
+        margin-left: 0px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
